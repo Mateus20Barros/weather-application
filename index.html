@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <title>Weather Application</title>
+    </head>
+    <body class="body">
+        <header>
+            <h1><i class="fas fa-sun fa-1x"></i>Weather Application</h1>
+            <button data-js="change_theme"><i class="fas fa-adjust fa-sm"></i>Change theme</button>
+        </header>
+        <main>
+            <section class="info_container">
+                    <span>Hey there ...</span>
+                    <p>
+                        <span>Weather Application</span> is a system that works with weather conditions in several cities 
+                        around the world using the <span>AccuWeather API</span> to obtain weather information.
+                    </p>
+                    <p>
+                        When performing a search, you will get weather information of the city such as: <span>City name</span>, 
+                        time zone indicating whether it is <span>Day</span> or <span>Night</span>, <span>Weather</span> and <span>Temperature</span>.
+                    </p>
+                    <p>This information will be shown on a revolving card just below the research button on the side.</p>
+                    <p>As we use third-party APIs, you will only be able to perform 50 searches with the <span>Weather Application</span>.</p>
+                    <p>Enjoy !</p>
+            </section>
+            <section class="search_city">
+                <div class="form_container">
+                    <h3>Search by City Weather</h3>
+                    <form data-js="form">
+                        <input type="text" name="cityname" placeholder="City name" autocomplete="off">
+                        <button>Search city</button>
+                    </form>
+                </div>
+                <div data-js="weather_container" class="weather_city">
+                    <div data-js="card" class="card">
+                        <div data-js="card_inner" class="card_inner">
+                            <div class="card_face card_face--front">
+                                <div data-js="time_icon" class="weather_icon"></div>
+                            </div>
+                            <div data-js="city_card" class="card_face card_face--back">
+                                <div class="card_icon_info">
+                                    <h2 data-js="city_name"></h2>
+                                    <div class="weather_info">
+                                        <span data-js="city_weather"></span>
+                                        <span data-js="city_temperature" class="city_degree"></span><span>&ring;C</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>   
+            </section>
+        </main>
+
+        <script src="./js/weather_app.js"></script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
