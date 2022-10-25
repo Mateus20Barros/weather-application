@@ -8,7 +8,7 @@ const timeIconContainer = document.querySelector('[data-js="time_icon"]')
 const changeThemeButton = document.querySelector('[data-js="change_theme"]')
 const cityWeatherContainer = document.querySelector('[data-js="city_weather"]')
 const weatherCitiesContainer = document.querySelector('[data-js="weather_container"]')
-const cityTemperatureContainer = document.querySelector('[data-js="city_temperature"]')
+const cityTemperatureContainer = document.querySelector('[data-js="city_temperature"]') 
 
 const handleThemeChange = () => {
     if (body.classList.contains('body')) {
