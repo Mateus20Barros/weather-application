@@ -13,6 +13,7 @@
 **`☀️ Day Theme`**
 
 ![](https://github.com/Mateus20Barros/weather-application/blob/main/assets/2021-08-02%20(2).png)
+
 <br>
 
 **`🌙 Night Theme`**
